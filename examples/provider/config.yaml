@@ -1,4 +1,4 @@
-apiVersion: cloudpak.crossplane.io/v1alpha1
+apiVersion: instana.crossplane.io/v1alpha1
 kind: ProviderConfig
 metadata:
   name: instana-provider-config 

@@ -20,8 +20,8 @@ package apis
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 
-	instanav1alpha1 "github.com/crossplane/provider-instana/apis/instana/v1alpha1"
-	configv1alpha1 "github.com/crossplane/provider-instana/apis/v1alpha1"
+	instanav1alpha1 "github.com/jianh619/provider-instana/apis/instana/v1alpha1"
+	configv1alpha1 "github.com/jianh619/provider-instana/apis/v1alpha1"
 )
 
 func init() {
@@ -39,3 +39,4 @@ var AddToSchemes runtime.SchemeBuilder
 func AddToScheme(s *runtime.Scheme) error {
 	return AddToSchemes.AddToScheme(s)
 }
+

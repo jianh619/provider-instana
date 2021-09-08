@@ -25,7 +25,7 @@ import (
 
 // Package type metadata.
 const (
-	Group   = "ssh.crossplane.io"
+	Group   = "instana.crossplane.io"
 	Version = "v1alpha1"
 )
 
@@ -62,3 +62,4 @@ func init() {
 	SchemeBuilder.Register(&ProviderConfig{}, &ProviderConfigList{})
 	SchemeBuilder.Register(&ProviderConfigUsage{}, &ProviderConfigUsageList{})
 }
+

@@ -25,7 +25,7 @@ import (
 
 // Package type metadata.
 const (
-	Group   = "crossplane.io"
+	Group   = "instana.crossplane.io"
 	Version = "v1alpha1"
 )
 
@@ -48,3 +48,4 @@ var (
 func init() {
 	SchemeBuilder.Register(&Instana{}, &InstanaList{})
 }
+

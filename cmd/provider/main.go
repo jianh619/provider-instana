@@ -27,8 +27,8 @@ import (
 	"github.com/crossplane/crossplane-runtime/pkg/logging"
 	"github.com/crossplane/crossplane-runtime/pkg/ratelimiter"
 
-	"github.com/crossplane/provider-instana/apis"
-	"github.com/crossplane/provider-instana/internal/controller"
+	"github.com/jianh619/provider-instana/apis"
+	"github.com/jianh619/provider-instana/internal/controller"
 )
 
 func main() {
@@ -66,3 +66,4 @@ func main() {
 	kingpin.FatalIfError(controller.Setup(mgr, log, rl), "Cannot setup instana controllers")
 	kingpin.FatalIfError(mgr.Start(ctrl.SetupSignalHandler()), "Cannot start controller manager")
 }
+
