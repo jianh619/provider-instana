@@ -1,0 +1,12 @@
+apiVersion: cloudpak.crossplane.io/v1alpha1
+kind: Instana
+metadata:
+  name: instana
+spec:
+  forProvider:
+    nfsServerHost: in-kind-instana-db.fyre.ibm.com
+    settingsConfigmap:
+      name: instana-settings
+      namespace: crossplane-system
+  providerConfigRef:
+    name: instana-provider-config
