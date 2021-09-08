@@ -27,7 +27,7 @@
 ## Deploy instana on k8s via crossplane
 
 
-![w](../images/instana-on-kind-via-crossplane.png)
+![w](images/instana-on-kind-via-crossplane.png)
 
 
 
