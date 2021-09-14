@@ -49,7 +49,7 @@ kubectl create configmap instana-settings --from-file=./examples/instana/setting
 
 ```shell
 cat << EOF | oc apply -f -
-apiVersion: cloudpak.crossplane.io/v1alpha1
+apiVersion: instana.crossplane.io/v1alpha1
 kind: ProviderConfig
 metadata:
   name: instana-provider-config 
@@ -69,7 +69,7 @@ Note: you need specify the corresponding secret name/namespace in [Create kubeco
 
 ```shell
 cat << EOF | oc apply -f -
-apiVersion: cloudpak.crossplane.io/v1alpha1
+apiVersion: instana.crossplane.io/v1alpha1
 kind: Instana
 metadata:
   name: instana
