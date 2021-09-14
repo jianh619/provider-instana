@@ -62,6 +62,8 @@ spec:
               forProvider:
                 description: MyTypeParameters are the configurable fields of a MyType.
                 properties:
+                  instanaVersion:
+                    type: string
                   nfsServerHost:
                     type: string
                   settingsConfigmap:
@@ -75,6 +77,7 @@ spec:
                     - namespace
                     type: object
                 required:
+                - instanaVersion
                 - nfsServerHost
                 - settingsConfigmap
                 type: object

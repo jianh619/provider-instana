@@ -24,6 +24,7 @@ import (
 
 // MyTypeParameters are the configurable fields of a MyType.
 type InstanaParameters struct {
+	InstanaVersion    string            `json:"instanaVersion"`
 	NFSServerHost     string            `json:"nfsServerHost"`
 	SettingsConfigmap SettingsConfigmap `json:"settingsConfigmap"`
 }
@@ -75,3 +76,4 @@ type InstanaList struct {
 	metav1.ListMeta `json:"metadata,omitempty"`
 	Items           []Instana `json:"items"`
 }
+

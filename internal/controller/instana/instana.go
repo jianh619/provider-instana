@@ -284,6 +284,10 @@ func (e *external) installInstana(ctx context.Context, cr *v1alpha1.Instana) err
 									Name:  "INSTANA_DB_HOST",
 									Value: cr.Spec.ForProvider.NFSServerHost,
 								},
+								{
+									Name:  "INSTANA_VERSION",
+									Value: cr.Spec.ForProvider.InstanaVersion,
+								},
 							},
 							VolumeMounts: []corev1.VolumeMount{
 								{
@@ -336,3 +340,4 @@ func (e *external) installInstana(ctx context.Context, cr *v1alpha1.Instana) err
 	e.logger.Info("instana job created successfully ")
 	return nil
 }
+
