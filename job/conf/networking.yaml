@@ -1,0 +1,71 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: acceptor-svc
+  namespace: instana-core
+spec:
+  ports:
+    - name: http-service
+      port: 8600
+      nodePort: 30950
+      protocol: TCP
+    - name: http-admin
+      port: 8601
+      nodePort: 30951
+      protocol: TCP
+  selector:
+    application: instana
+    component: acceptor
+    group: service
+  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ingress-core-svc
+  namespace: instana-core
+spec:
+  ports:
+    - name: http
+      port: 8080
+      nodePort: 30952
+      protocol: TCP
+    - name: https
+      port: 8443
+      nodePort: 30953
+      protocol: TCP
+  selector:
+    application: instana
+    component: ingress-core
+    group: service
+  type: NodePort
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: unit-ingress-svc
+  namespace: instana-units
+spec:
+  ports:
+    - name: http
+      port: 8080
+      nodePort: 30954
+      protocol: TCP
+    - name: https
+      port: 8443
+      nodePort: 30955
+      protocol: TCP
+    - name: http-eum
+      port: 8086
+      nodePort: 30956
+      protocol: TCP
+    - name: https-eum
+      port: 8446
+      nodePort: 30957
+      protocol: TCP
+  selector:
+    application: instana
+    component: ingress
+    group: service
+  type: NodePort
