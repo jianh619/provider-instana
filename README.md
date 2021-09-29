@@ -75,12 +75,13 @@ metadata:
   name: instana
 spec:
   forProvider:
+    instanaVersion: 205-2
     nfsServerHost: in-kind-instana-db.fyre.ibm.com
     settingsConfigmap:
       name: instana-settings
       namespace: crossplane-system
   providerConfigRef:
-    name: instana-provider-config 
+    name: instana-provider-config
 EOF
 ```
 
