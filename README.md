@@ -75,20 +75,13 @@ metadata:
   name: instana
 spec:
   forProvider:
-<<<<<<< HEAD
-=======
     instanaVersion: 205-2
->>>>>>> 59753c8897937fe81010339bf88498ed022d0cc4
     nfsServerHost: in-kind-instana-db.fyre.ibm.com
     settingsConfigmap:
       name: instana-settings
       namespace: crossplane-system
   providerConfigRef:
-<<<<<<< HEAD
-    name: instana-provider-config 
-=======
     name: instana-provider-config
->>>>>>> 59753c8897937fe81010339bf88498ed022d0cc4
 EOF
 ```
 
