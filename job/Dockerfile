@@ -20,9 +20,16 @@ RUN mkdir -p /root/instana; \
     rm -rf /root/instana/tmp-helm3
 
 COPY job/conf /root/instana/
+<<<<<<< HEAD
 COPY job/install.sh job/config.sh job/common.sh /root/instana/
+=======
+COPY job/install.sh /root/instana
+>>>>>>> 59753c8897937fe81010339bf88498ed022d0cc4
 
 WORKDIR /root/instana
 
 CMD ["/root/instana/install.sh"]
+<<<<<<< HEAD
 
+=======
+>>>>>>> 59753c8897937fe81010339bf88498ed022d0cc4
